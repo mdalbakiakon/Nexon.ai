@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+/* Reset margins and paddings for the whole page */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%; /* Prevent page-level scroll if you want section-level scroll */
+  font-family: "Outfit", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@theme {
+  --color-primary: #0f172a;
+}
+
+/* Reset styles for Markdown content */
+.reset-tw, .reset-tw * {
+  all: revert !important;
+}
+
+/* Custom Scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+  width: 8px;  /* thickness for vertical scrollbar */
+  height: 8px; /* thickness for horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* transparent scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary); /* scrollbar thumb color */
+  border-radius: 8px;
+  border: 2px solid transparent; /* creates gap effect */
+  background-clip: content-box; /* makes border visible */
+}
+
+/* Firefox scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) transparent;
+}
+
+.cl-drawerRoot{
+  z-index: 60;
+}
