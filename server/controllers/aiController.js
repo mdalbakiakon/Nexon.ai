@@ -28,6 +28,7 @@ export const generateArticle = async (req, res) => {
 
     const response = await AI.chat.completions.create({
       model: "gemini-flash-latest",
+      reasoning_effort: "none",
       messages: [
         {
           role: "user",
