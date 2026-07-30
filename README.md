@@ -49,7 +49,7 @@ Nexon.ai is a full-stack AI-powered SaaS application that brings together conten
 
 ---
 
-<!-- ## 📸 Screenshots
+## 📸 Screenshots
 
 ### Landing Page
 ![Landing Page](screenshots/landing.png)
@@ -57,22 +57,22 @@ Nexon.ai is a full-stack AI-powered SaaS application that brings together conten
 ### Dashboard
 ![Dashboard](screenshots/dashboard.png)
 
-### Write Article
-![Write Article](screenshots/write-article.png)
+<!-- ### Write Article
+![Write Article](screenshots/write-article.png) -->
 
 ### Generate Images
-![Generate Images](screenshots/ai-images-generate.png)
+![Generate Images](screenshots/ai-image-generate.png)
 
 ### Remove Background / Object
-![Remove Background](screenshots/remove-background.png)
+![Remove Background](screenshots/remove.png)
 
-### Resume Review
-![Resume Review](screenshots/resume-review.png)
+<!-- ### Resume Review
+![Resume Review](screenshots/resume-review.png) -->
 
 ### Community Feed
 ![Community](screenshots/community.png)
 
---- -->
+---
 
 ## 🛠️ Tech Stack
 
