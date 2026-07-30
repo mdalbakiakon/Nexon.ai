@@ -184,8 +184,4 @@ LinkedIn: [mdalbakiakon](https://www.linkedin.com/in/md-al-baki-akon-352989362/)
 **Developed by Md. Al Baki Akon**
 ⭐ Star this repo if you find it helpful!
 
-<<<<<<< HEAD
 </div>
-=======
-</div>
->>>>>>> 62f70c15f85f99aeb92cc14ec885b1f74458526f
