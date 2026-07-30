@@ -27,7 +27,7 @@ export const generateArticle = async (req, res) => {
     }
 
     const response = await AI.chat.completions.create({
-      model: "gemini-2.0-flash",
+      model: "gemini-2.5-flash-lite",
       messages: [
         {
           role: "user",
@@ -72,7 +72,7 @@ export const generateBlogTitle = async (req, res) => {
     }
 
     const response = await AI.chat.completions.create({
-      model: "gemini-2.0-flash",
+      model: "gemini-2.5-flash-lite",
       messages: [
         {
           role: "user",
@@ -202,7 +202,7 @@ export const removeImageBackground = async (req, res) => {
 export const removeImageObject = async (req, res) => {
   try {
     const { userId } = req.auth();
-    const {object} = req.body;
+    const { object } = req.body;
     const image = req.file;
     const plan = req.plan;
 
@@ -265,7 +265,7 @@ export const resumeReview = async (req, res) => {
     const prompt = `Review the following resume and provide constructive feedback on its strength, weaknesses, and areas for improvement. Resume Content:\n\n${pdfData.text}`;
 
     const response = await AI.chat.completions.create({
-      model: "gemini-2.0-flash",
+      model: "gemini-2.5-flash",
       messages: [
         {
           role: "user",
@@ -283,7 +283,7 @@ export const resumeReview = async (req, res) => {
       VALUES (${userId}, 'Review the uploaded resume', ${content}, 'resume-review')
     `;
 
-    res.json({ success: true, content});
+    res.json({ success: true, content });
   } catch (error) {
     console.error("Error in generateImage:", {
       message: error.message,
