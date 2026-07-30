@@ -27,7 +27,7 @@ export const generateArticle = async (req, res) => {
     }
 
     const response = await AI.chat.completions.create({
-      model: "gemini-2.5-flash-lite",
+      model: "gemini-flash-latest",
       messages: [
         {
           role: "user",
@@ -72,7 +72,7 @@ export const generateBlogTitle = async (req, res) => {
     }
 
     const response = await AI.chat.completions.create({
-      model: "gemini-2.5-flash-lite",
+      model: "gemini-flash-latest",
       messages: [
         {
           role: "user",
@@ -265,7 +265,7 @@ export const resumeReview = async (req, res) => {
     const prompt = `Review the following resume and provide constructive feedback on its strength, weaknesses, and areas for improvement. Resume Content:\n\n${pdfData.text}`;
 
     const response = await AI.chat.completions.create({
-      model: "gemini-2.5-flash",
+      model: "gemini-flash-latest",
       messages: [
         {
           role: "user",
